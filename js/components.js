@@ -17,8 +17,8 @@ async function loadPartial(selector, url) {
 
 document.addEventListener('DOMContentLoaded', async () => {
   await Promise.all([
-    loadPartial('#site-header', '/partials/header.html'),
-    loadPartial('#site-footer', '/partials/footer.html'),
+    loadPartial('#site-header', 'partials/header.html'),
+    loadPartial('#site-footer', 'partials/footer.html'),
   ]);
 
   document.dispatchEvent(new CustomEvent('components:loaded'));
