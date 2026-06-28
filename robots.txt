@@ -1,4 +1,4 @@
-User-agent: *
+﻿User-agent: *
 Allow: /
 
-Sitemap: https://teslaplanet.by/sitemap.xml
+Sitemap: https://voltlab.by/sitemap.xml
