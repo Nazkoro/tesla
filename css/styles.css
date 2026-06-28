@@ -1,4 +1,4 @@
-/* TeslaPlanet — modern static CSS */
+/* ВольтЛаб — modern static CSS */
 
 :root {
   color-scheme: dark;
@@ -625,6 +625,365 @@ button {
 .feature-card p {
   font-size: 0.875rem;
   color: var(--text-muted);
+}
+
+/* ── B2B / Юр. лица ── */
+
+.b2b-section {
+  padding-block: clamp(3.5rem, 8vw, 5.5rem);
+}
+
+.b2b-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+  padding: clamp(2rem, 4vw, 3rem);
+  background: var(--bg-card);
+  border: 1px solid var(--border-accent);
+  border-radius: var(--radius-lg);
+  position: relative;
+  overflow: hidden;
+}
+
+.b2b-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 70% 80% at 100% 50%, var(--accent-glow), transparent);
+  pointer-events: none;
+}
+
+.b2b-content,
+.b2b-benefits {
+  position: relative;
+}
+
+.b2b-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.375rem 1rem;
+  background: var(--accent-soft);
+  border: 1px solid var(--border-accent);
+  border-radius: 999px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--accent);
+  margin-bottom: 1.25rem;
+}
+
+.b2b-content h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+
+.b2b-content p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.b2b-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.b2b-benefit {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.875rem;
+  padding: 1rem 1.25rem;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.b2b-benefit-icon {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  background: var(--accent);
+  border-radius: var(--radius-sm);
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.b2b-benefit h3 {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.b2b-benefit p {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .b2b-card {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* ── Chinese EV ── */
+
+.brands-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.brand-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.375rem;
+  padding: 1.25rem 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  text-align: center;
+  transition: border-color var(--transition), background var(--transition);
+}
+
+.brand-card:hover {
+  border-color: var(--accent);
+  background: var(--bg-card-hover);
+}
+
+.brand-card strong {
+  font-size: 1.0625rem;
+  font-weight: 700;
+}
+
+.brand-card span {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+}
+
+.chinese-ev-services {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.chinese-ev-service {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+}
+
+.chinese-ev-service::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: var(--accent);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ── Import teaser / page ── */
+
+.import-teaser {
+  padding-block: clamp(2rem, 5vw, 3rem);
+}
+
+.import-teaser-card {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+  padding: clamp(2rem, 4vw, 3rem);
+  background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-elevated) 100%);
+  border: 1px solid var(--border-accent);
+  border-radius: var(--radius-lg);
+  position: relative;
+  overflow: hidden;
+}
+
+.import-teaser-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 50% 80% at 0% 50%, var(--accent-glow), transparent);
+  pointer-events: none;
+}
+
+.import-teaser-content,
+.import-teaser-aside {
+  position: relative;
+}
+
+.import-teaser-content h2 {
+  font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.import-teaser-content p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.import-teaser-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 2.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.import-stat-value {
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-weight: 800;
+  color: var(--accent);
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+
+.import-stat-label {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+.import-teaser-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.import-teaser-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+}
+
+.import-teaser-list li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: var(--accent);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.import-page-hero {
+  padding-block: clamp(3rem, 8vw, 5rem);
+}
+
+.import-page-hero .hero-content {
+  max-width: 800px;
+}
+
+.import-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.import-step {
+  padding: 1.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.import-step-num {
+  display: inline-grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 800;
+  font-size: 0.875rem;
+  border-radius: var(--radius-sm);
+  margin-bottom: 1rem;
+}
+
+.import-step h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.import-step p {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.import-includes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.import-include {
+  padding: 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+}
+
+.import-include strong {
+  display: block;
+  color: var(--text);
+  font-weight: 600;
+  margin-bottom: 0.375rem;
+}
+
+.import-cta {
+  text-align: center;
+  padding: clamp(2.5rem, 5vw, 4rem);
+  background: var(--bg-card);
+  border: 1px solid var(--border-accent);
+  border-radius: var(--radius-lg);
+}
+
+.import-cta h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+}
+
+.import-cta p {
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.import-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .import-teaser-card {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
 }
 
 /* ── Reviews ── */
