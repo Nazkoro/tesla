@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
@@ -27,29 +27,28 @@
     <div class="container header-inner">
       <a href="index.html" class="logo" aria-label="ВольтЛаб — на главную">Вольт<span>Лаб</span></a>
       <nav class="nav-desktop" aria-label="Основная навигация">
-        <div class="nav-dropdown">
-          <a href="index.html#services" class="nav-link">Услуги<svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
-          <div class="nav-dropdown-menu" role="menu">
-            <a href="index.html#services" role="menuitem">Диагностика двигателя</a>
-            <a href="index.html#services" role="menuitem">Ремонт силовой установки</a>
-            <a href="index.html#services" role="menuitem">Реставрация АКБ</a>
-            <a href="import.html" role="menuitem">Пригон авто из США</a>
-            <a href="index.html#services" role="menuitem">Все услуги →</a>
-          </div>
+                        <div class="nav-dropdown">
+          <a href="services.html" class="nav-link">Услуги<svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+        <div class="nav-dropdown-menu" role="menu">
+          <a href="index.html" role="menuitem">Главная</a>
+          <a href="services.html" role="menuitem">Услуги</a>
+          <a href="import.html" role="menuitem">Пригон авто из США</a>
+        </div>
         </div>
         <div class="nav-dropdown">
-          <a href="index.html#models" class="nav-link">Модели<svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
-          <div class="nav-dropdown-menu" role="menu">
-            <a href="index.html#models" role="menuitem">Tesla Model S</a>
-            <a href="index.html#models" role="menuitem">Tesla Model 3</a>
-            <a href="index.html#models" role="menuitem">Tesla Model X</a>
-            <a href="index.html#models" role="menuitem">Tesla Model Y</a>
-            <a href="index.html#models" role="menuitem">Tesla Cybertruck</a>
-          </div>
+          <a href="models.html" class="nav-link">Модели<svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+        <div class="nav-dropdown-menu" role="menu">
+          <a href="models.html" role="menuitem">Tesla Model S</a>
+          <a href="models.html" role="menuitem">Tesla Model 3</a>
+          <a href="models.html" role="menuitem">Tesla Model X</a>
+          <a href="models.html" role="menuitem">Tesla Model Y</a>
+          <a href="models.html" role="menuitem">Tesla Cybertruck</a>
+          <a href="models.html" role="menuitem">Все модели →</a>
         </div>
-        <a href="index.html#about" class="nav-link">О нас</a>
-        <a href="index.html#reviews" class="nav-link">Отзывы</a>
-        <a href="index.html#contacts" class="nav-link">Контакты</a>
+        </div>
+        <a href="about.html" class="nav-link">О нас</a>
+        <a href="reviews.html" class="nav-link">Отзывы</a>
+        <a href="contacts.html" class="nav-link">Контакты</a>
       </nav>
       <div class="header-actions">
         <a href="tel:+375336883359" class="phone-link">
@@ -65,17 +64,15 @@
     </div>
   </header>
   <nav id="mobile-nav" class="mobile-nav" aria-label="Мобильная навигация" hidden>
-    <a href="index.html#services">Услуги</a>
-    <a href="index.html#models">Модели</a>
-    <a href="import.html">Пригон авто</a>
-    <a href="index.html#about">О нас</a>
-    <a href="index.html#reviews">Отзывы</a>
-    <a href="index.html#contacts">Контакты</a>
+    <a href="services.html">Услуги</a>
+    <a href="models.html">Модели</a>
+    <a href="about.html">О нас</a>
+    <a href="reviews.html">Отзывы</a>
+    <a href="contacts.html">Контакты</a>
     <div class="mobile-nav-group">
-      <h4>Популярные услуги</h4>
+      <h4>Популярное</h4>
       <a href="import.html">Пригон авто из США</a>
-      <a href="index.html#services">Диагностика двигателя</a>
-      <a href="index.html#services">Реставрация АКБ</a>
+      <a href="services.html">Услуги</a>
     </div>
     <div class="mobile-nav-group">
       <h4>Связаться</h4>
@@ -84,6 +81,13 @@
   </nav>
 
   <main>
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="index.html">Главная</a>
+        <span aria-hidden="true">»</span>
+        <span>Пригон авто из США</span>
+      </nav>
+    </div>
     <section class="import-page-hero hero" aria-labelledby="import-hero-title">
       <div class="container hero-content">
         <span class="badge">Под ключ</span>
@@ -214,7 +218,7 @@
           <p>Оставьте заявку — рассчитаем стоимость под ваш бюджет и расскажем о доступных вариантах на аукционах</p>
           <div class="import-cta-actions">
             <a href="tel:+375336883359" class="btn btn-outline">+375 33 688 3359</a>
-            <a href="index.html#contacts" class="btn btn-ghost">Все контакты</a>
+            <a href="contacts.html" class="btn btn-ghost">Все контакты</a>
           </div>
         </div>
       </div>
@@ -236,26 +240,25 @@
         <div class="footer-col">
           <h4>Услуги</h4>
           <a href="import.html">Пригон авто из США</a>
-          <a href="index.html#services">Диагностика двигателя</a>
-          <a href="index.html#services">Ремонт силовой установки</a>
-          <a href="index.html#services">Реставрация АКБ</a>
-          <a href="index.html#services">Обновление ПО</a>
-          <a href="index.html#services" class="all-link">Все услуги →</a>
+          <a href="services.html">Диагностика двигателя</a>
+          <a href="services.html">Реставрация АКБ</a>
+          <a href="services.html">Обновление ПО</a>
+          <a href="services.html" class="all-link">Все услуги →</a>
         </div>
         <div class="footer-col">
           <h4>Модели</h4>
-          <a href="index.html#models">Tesla Model S</a>
-          <a href="index.html#models">Tesla Model 3</a>
-          <a href="index.html#models">Tesla Model X</a>
-          <a href="index.html#models">Tesla Model Y</a>
-          <a href="index.html#models">Tesla Cybertruck</a>
+          <a href="models.html">Tesla Model S</a>
+          <a href="models.html">Tesla Model 3</a>
+          <a href="models.html">Tesla Model X</a>
+          <a href="models.html">Tesla Model Y</a>
+          <a href="models.html">Tesla Cybertruck</a>
         </div>
         <div class="footer-col">
           <h4>Контакты</h4>
           <a href="tel:+375336883359">+375 33 688 3359</a>
-          <a href="index.html#contacts">Минск</a>
-          <a href="index.html#about">О нас</a>
-          <a href="index.html#reviews">Отзывы</a>
+          <a href="contacts.html">Минск</a>
+          <a href="about.html">О нас</a>
+          <a href="reviews.html">Отзывы</a>
         </div>
       </div>
       <div class="footer-bottom">

@@ -1,85 +1,52 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ВольтЛаб — Сервис и ремонт Tesla в Минске</title>
-  <meta name="description" content="ВольтЛаб — специализированный сервис Tesla в Беларуси. Диагностика, ремонт двигателей, восстановление батарей, прошивка и калибровка. Работаем со всеми моделями Tesla">
-  <meta name="keywords" content="ремонт Tesla, сервис Tesla Минск, ВольтЛаб, пригон авто из США, автомобиль из Америки под ключ, обслуживание Tesla, ремонт китайских электромобилей">
-  <meta name="robots" content="index, follow">
+  <meta name="description" content="ВольтЛаб — специализированный сервис Tesla в Беларуси. Диагностика, ремонт, восстановление батарей, пригон авто из США. Минск.">
+  <meta name="keywords" content="ремонт Tesla, сервис Tesla Минск, ВольтЛаб, пригон авто из США, обслуживание Tesla">
   <link rel="canonical" href="https://teslaplanet.by/">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-
-  <meta property="og:type" content="website">
   <meta property="og:title" content="ВольтЛаб — Сервис и ремонт Tesla в Минске">
-  <meta property="og:description" content="Профессиональное обслуживание и ремонт электромобилей Tesla. Диагностика, восстановление АКБ, обновление ПО.">
-  <meta property="og:locale" content="ru_BY">
+  <meta property="og:description" content="Профессиональное обслуживание и ремонт электромобилей Tesla в Минске.">
   <meta property="og:site_name" content="ВольтЛаб">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "AutoRepair",
-    "name": "ВольтЛаб",
-    "description": "Специализированный сервис по ремонту и обслуживанию электромобилей Tesla в Беларуси",
-    "url": "https://teslaplanet.by",
-    "telephone": "+375336883359",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Минск",
-      "addressRegion": "Минск",
-      "addressCountry": "BY"
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-      "opens": "10:00",
-      "closes": "19:00"
-    },
-    "priceRange": "$$",
-    "areaServed": "Минск и Минская область"
-  }
+  {"@context":"https://schema.org","@type":"AutoRepair","name":"ВольтЛаб","url":"https://teslaplanet.by","telephone":"+375336883359","address":{"@type":"PostalAddress","addressLocality":"Минск","addressCountry":"BY"}}
   </script>
 </head>
 <body>
 
-  <!-- Шапка: также в partials/header.html для других страниц -->
   <header class="site-header">
     <div class="container header-inner">
-      <a href="./" class="logo" aria-label="ВольтЛаб — на главную">Вольт<span>Лаб</span></a>
+      <a href="index.html" class="logo" aria-label="ВольтЛаб — на главную">Вольт<span>Лаб</span></a>
       <nav class="nav-desktop" aria-label="Основная навигация">
-        <div class="nav-dropdown">
-          <a href="#services" class="nav-link">Услуги<svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
-          <div class="nav-dropdown-menu" role="menu">
-            <a href="#services" role="menuitem">Диагностика двигателя</a>
-            <a href="#services" role="menuitem">Ремонт силовой установки</a>
-            <a href="#services" role="menuitem">Реставрация АКБ</a>
-            <a href="#services" role="menuitem">Сервис батарей</a>
-            <a href="#services" role="menuitem">Обновление ПО</a>
-            <a href="#services" role="menuitem">Настройка автопилота</a>
-            <a href="#services" role="menuitem">Компьютерная диагностика</a>
-            <a href="import.html" role="menuitem">Пригон авто из США</a>
-            <a href="#services" role="menuitem">Все услуги →</a>
-          </div>
+                        <div class="nav-dropdown">
+          <a href="services.html" class="nav-link">Услуги<svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+        <div class="nav-dropdown-menu" role="menu">
+          <a href="index.html" role="menuitem">Главная</a>
+          <a href="services.html" role="menuitem">Услуги</a>
+          <a href="import.html" role="menuitem">Пригон авто из США</a>
+        </div>
         </div>
         <div class="nav-dropdown">
-          <a href="#models" class="nav-link">Модели<svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
-          <div class="nav-dropdown-menu" role="menu">
-            <a href="#models" role="menuitem">Tesla Model S</a>
-            <a href="#models" role="menuitem">Tesla Model 3</a>
-            <a href="#models" role="menuitem">Tesla Model X</a>
-            <a href="#models" role="menuitem">Tesla Model Y</a>
-            <a href="#models" role="menuitem">Tesla Cybertruck</a>
-          </div>
+          <a href="models.html" class="nav-link">Модели<svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+        <div class="nav-dropdown-menu" role="menu">
+          <a href="models.html" role="menuitem">Tesla Model S</a>
+          <a href="models.html" role="menuitem">Tesla Model 3</a>
+          <a href="models.html" role="menuitem">Tesla Model X</a>
+          <a href="models.html" role="menuitem">Tesla Model Y</a>
+          <a href="models.html" role="menuitem">Tesla Cybertruck</a>
+          <a href="models.html" role="menuitem">Все модели →</a>
         </div>
-        <a href="#about" class="nav-link">О нас</a>
-        <a href="#reviews" class="nav-link">Отзывы</a>
-        <a href="#contacts" class="nav-link">Контакты</a>
+        </div>
+        <a href="about.html" class="nav-link">О нас</a>
+        <a href="reviews.html" class="nav-link">Отзывы</a>
+        <a href="contacts.html" class="nav-link">Контакты</a>
       </nav>
       <div class="header-actions">
         <a href="tel:+375336883359" class="phone-link">
@@ -95,18 +62,15 @@
     </div>
   </header>
   <nav id="mobile-nav" class="mobile-nav" aria-label="Мобильная навигация" hidden>
-    <a href="#services">Услуги</a>
-    <a href="#models">Модели</a>
-    <a href="#about">О нас</a>
-    <a href="#reviews">Отзывы</a>
-    <a href="#contacts">Контакты</a>
+    <a href="services.html">Услуги</a>
+    <a href="models.html">Модели</a>
+    <a href="about.html">О нас</a>
+    <a href="reviews.html">Отзывы</a>
+    <a href="contacts.html">Контакты</a>
     <div class="mobile-nav-group">
-      <h4>Популярные услуги</h4>
-      <a href="#services">Диагностика двигателя</a>
-      <a href="#services">Реставрация АКБ</a>
+      <h4>Популярное</h4>
       <a href="import.html">Пригон авто из США</a>
-      <a href="#services">Настройка автопилота</a>
-      <a href="#services">Обновление ПО</a>
+      <a href="services.html">Услуги</a>
     </div>
     <div class="mobile-nav-group">
       <h4>Связаться</h4>
@@ -115,469 +79,128 @@
   </nav>
 
   <main>
-    <!-- Hero -->
     <section class="hero" aria-labelledby="hero-title">
       <div class="container hero-content">
         <span class="badge">Техцентр Tesla в Беларуси</span>
         <h1 id="hero-title">Экспертное обслуживание и техническая поддержка</h1>
         <p class="accent-title" aria-hidden="true">Tesla</p>
         <p class="hero-desc">Комплексная диагностика, ремонт силовых агрегатов, восстановление аккумуляторных блоков, обновление прошивки и калибровка систем. Обслуживаем весь модельный ряд Tesla в Минске.</p>
-        <a href="#services" class="btn btn-outline">Смотреть услуги</a>
-
+        <a href="services.html" class="btn btn-outline">Смотреть услуги</a>
         <div class="stats" role="list">
-          <div role="listitem">
-            <div class="stat-value">7+</div>
-            <div class="stat-label">лет практики</div>
-          </div>
-          <div role="listitem">
-            <div class="stat-value">500+</div>
-            <div class="stat-label">авто на обслуживании</div>
-          </div>
-          <div role="listitem">
-            <div class="stat-value">5</div>
-            <div class="stat-label">моделей в работе</div>
-          </div>
+          <div role="listitem"><div class="stat-value">7+</div><div class="stat-label">лет практики</div></div>
+          <div role="listitem"><div class="stat-value">500+</div><div class="stat-label">авто на обслуживании</div></div>
+          <div role="listitem"><div class="stat-value">5</div><div class="stat-label">моделей в работе</div></div>
         </div>
       </div>
     </section>
 
-    <!-- Services -->
-    <section id="services" class="section" aria-labelledby="services-title">
+    <section class="section" aria-labelledby="services-preview">
       <div class="container">
         <header class="section-header">
-          <h2 id="services-title">Чем мы занимаемся</h2>
-          <p>Широкий перечень работ по техническому обслуживанию и восстановлению электромобилей Tesla</p>
+          <h2 id="services-preview">Наши услуги</h2>
+          <p>Ремонт, диагностика и программное обслуживание электромобилей Tesla</p>
         </header>
-
         <div class="services-grid">
           <article class="service-card">
-            <div class="service-icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
+            <div class="service-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
             <h3>Диагностика силового агрегата</h3>
-            <p>Детальная проверка статора, ротора, подшипниковых узлов и обмоток электродвигателя с составлением технического заключения.</p>
+            <p>Полная проверка электродвигателя с техническим заключением.</p>
             <p class="service-price">от 150 BYN</p>
-            <a href="#contacts" class="btn-link">Узнать подробнее →</a>
           </article>
-
           <article class="service-card">
-            <div class="service-icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <h3>Ремонт электродвигателя</h3>
-            <p>Восстановление роторных и статорных элементов, замена изношенных подшипников, уплотнений и сальников.</p>
-            <p class="service-price">от 500 BYN</p>
-            <a href="#contacts" class="btn-link">Узнать подробнее →</a>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="1" y="6" width="18" height="12" rx="2" stroke="currentColor" stroke-width="2"/><path d="M23 13v-2M6 10h4M6 14h2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-            </div>
+            <div class="service-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="1" y="6" width="18" height="12" rx="2" stroke="currentColor" stroke-width="2"/></svg></div>
             <h3>Реставрация аккумулятора</h3>
-            <p>Глубокое восстановление высоковольтной батареи: замена модулей, балансировка ёмкости, просушка и герметизация.</p>
+            <p>Замена модулей, балансировка ёмкости, восстановление АКБ.</p>
             <p class="service-price">от 800 BYN</p>
-            <a href="#contacts" class="btn-link">Узнать подробнее →</a>
           </article>
-
           <article class="service-card">
-            <div class="service-icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <h3>Профилактика АКБ</h3>
-            <p>Плановое обслуживание батарейного блока: сброс SOC, устранение ошибок BMS, контроль состояния каждого модуля.</p>
-            <p class="service-price">от 200 BYN</p>
-            <a href="#contacts" class="btn-link">Узнать подробнее →</a>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
+            <div class="service-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
             <h3>Настройка автопилота</h3>
-            <p>Активация расширенных функций FSD, установка пользовательских карт, настройка навигационных модулей.</p>
+            <p>Активация FSD, настройка навигации и карт.</p>
             <p class="service-price">от 300 BYN</p>
-            <a href="#contacts" class="btn-link">Узнать подробнее →</a>
           </article>
-
           <article class="service-card">
-            <div class="service-icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 19.5A2.5 2.5 0 016.5 17H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z" stroke="currentColor" stroke-width="2"/></svg>
-            </div>
-            <h3>Обновление прошивки</h3>
-            <p>Установка актуальной версии ПО, восстановление после сбоев, смена региональных настроек и локализация.</p>
-            <p class="service-price">от 200 BYN</p>
-            <a href="#contacts" class="btn-link">Узнать подробнее →</a>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-            </div>
+            <div class="service-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/></svg></div>
             <h3>Компьютерная диагностика</h3>
-            <p>Сканирование всех электронных блоков автомобиля, чтение и расшифровка кодов неисправностей Tesla.</p>
+            <p>Сканирование всех блоков и расшифровка ошибок.</p>
             <p class="service-price">от 100 BYN</p>
-            <a href="#contacts" class="btn-link">Узнать подробнее →</a>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 11-7.778 7.778 5.5 5.5 0 017.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <h3>Программирование ключей</h3>
-            <p>Привязка новых ключ-карт и брелоков, работа с иммобилайзером, восстановление доступа к автомобилю.</p>
-            <p class="service-price">от 150 BYN</p>
-            <a href="#contacts" class="btn-link">Узнать подробнее →</a>
           </article>
         </div>
-
-        <div class="section-footer">
-          <a href="#contacts" class="btn btn-ghost">Все услуги →</a>
-        </div>
+        <div class="section-footer"><a href="services.html" class="btn btn-ghost">Все услуги →</a></div>
       </div>
     </section>
 
-    <!-- Models -->
-    <section id="models" class="section" aria-labelledby="models-title">
-      <div class="container">
-        <header class="section-header">
-          <h2 id="models-title">Каждая модель — отдельный подход</h2>
-          <p>Индивидуальная методика обслуживания с учётом конструктивных особенностей каждого поколения Tesla</p>
-        </header>
-
-        <div class="models-grid">
-          <article class="model-card" data-letter="S">
-            <h3>Tesla Model S</h3>
-            <p class="model-desc">Представительский электроседан, выпускается с 2012 года</p>
-            <div class="model-specs">
-              <div><span>запас хода</span><strong>до 652 км</strong></div>
-              <div><span>мощность</span><strong>до 1020 л.с.</strong></div>
-            </div>
-          </article>
-
-          <article class="model-card" data-letter="3">
-            <h3>Tesla Model 3</h3>
-            <p class="model-desc">Самый востребованный электроседан в мире</p>
-            <div class="model-specs">
-              <div><span>запас хода</span><strong>до 602 км</strong></div>
-              <div><span>мощность</span><strong>до 510 л.с.</strong></div>
-            </div>
-          </article>
-
-          <article class="model-card" data-letter="X">
-            <h3>Tesla Model X</h3>
-            <p class="model-desc">Просторный электрокроссовер премиум-класса</p>
-            <div class="model-specs">
-              <div><span>запас хода</span><strong>до 576 км</strong></div>
-              <div><span>мощность</span><strong>до 1020 л.с.</strong></div>
-            </div>
-          </article>
-
-          <article class="model-card" data-letter="Y">
-            <h3>Tesla Model Y</h3>
-            <p class="model-desc">Компактный кроссовер — лидер продаж Tesla</p>
-            <div class="model-specs">
-              <div><span>запас хода</span><strong>до 533 км</strong></div>
-              <div><span>мощность</span><strong>до 514 л.с.</strong></div>
-            </div>
-          </article>
-
-          <article class="model-card" data-letter="CT">
-            <h3>Tesla Cybertruck</h3>
-            <p class="model-desc">Футуристический электропикап нового поколения</p>
-            <div class="model-specs">
-              <div><span>запас хода</span><strong>до 547 км</strong></div>
-              <div><span>мощность</span><strong>до 845 л.с.</strong></div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Import from USA -->
     <section id="import" class="import-teaser" aria-labelledby="import-teaser-title">
       <div class="container">
         <div class="import-teaser-card">
           <div class="import-teaser-content">
             <span class="b2b-badge">Под ключ</span>
             <h2 id="import-teaser-title">Подбор и пригон авто из США с восстановлением</h2>
-            <p>Найдём оптимальный вариант на аукционах США, организуем доставку, растаможим и приведём автомобиль в идеальное состояние — Tesla, электромобили и другие марки под ключ.</p>
+            <p>Найдём вариант на аукционах США, доставим, растаможим и восстановим — Tesla, электромобили и другие марки.</p>
             <div class="import-teaser-stats">
-              <div>
-                <div class="import-stat-value">200+</div>
-                <div class="import-stat-label">авто привезено под ключ</div>
-              </div>
-              <div>
-                <div class="import-stat-value">от 1500 BYN</div>
-                <div class="import-stat-label">стоимость услуги</div>
-              </div>
-              <div>
-                <div class="import-stat-value">Выгодно</div>
-                <div class="import-stat-label">минимальные тарифы на доставку</div>
-              </div>
+              <div><div class="import-stat-value">200+</div><div class="import-stat-label">авто под ключ</div></div>
+              <div><div class="import-stat-value">от 1500 BYN</div><div class="import-stat-label">стоимость услуги</div></div>
             </div>
             <a href="import.html" class="btn btn-outline">Подробнее о пригоне →</a>
           </div>
           <aside class="import-teaser-aside">
             <ul class="import-teaser-list">
-              <li>Проверка истории и диагностика до покупки</li>
-              <li>Доставка из США с выгодными тарифами</li>
-              <li>Растаможка и полное оформление документов</li>
-              <li>Восстановление после ДТП и косметический ремонт</li>
-              <li>Русификация, прошивка и подготовка к эксплуатации</li>
+              <li>Проверка истории до покупки</li>
+              <li>Доставка с минимальными тарифами</li>
+              <li>Растаможка и восстановление</li>
+              <li>Русификация и подготовка к эксплуатации</li>
             </ul>
           </aside>
         </div>
       </div>
     </section>
 
-    <!-- Chinese EV -->
-    <section id="chinese-ev" class="section" aria-labelledby="chinese-ev-title">
+    <section class="section" aria-labelledby="reviews-preview">
       <div class="container">
         <header class="section-header">
-          <h2 id="chinese-ev-title">Обслуживание китайских электромобилей</h2>
-          <p>Помимо Tesla обслуживаем популярные китайские EV-бренды — диагностика, ремонт и программное сопровождение с учётом особенностей их архитектуры</p>
+          <h2 id="reviews-preview">Мнения клиентов</h2>
+          <p>Что говорят владельцы Tesla о нашем сервисе</p>
         </header>
-
-        <div class="brands-grid">
-          <article class="brand-card"><strong>BYD</strong><span>Han, Tang, Seal</span></article>
-          <article class="brand-card"><strong>Zeekr</strong><span>001, X, 007</span></article>
-          <article class="brand-card"><strong>Li Auto</strong><span>L6, L7, L9</span></article>
-          <article class="brand-card"><strong>NIO</strong><span>ES6, ES8, ET5</span></article>
-          <article class="brand-card"><strong>Voyah</strong><span>Free, Dream</span></article>
-          <article class="brand-card"><strong>XPeng</strong><span>G6, G9, P7</span></article>
-        </div>
-
-        <div class="chinese-ev-services">
-          <div class="chinese-ev-service">Компьютерная диагностика всех систем</div>
-          <div class="chinese-ev-service">Обслуживание и ремонт высоковольтных батарей</div>
-          <div class="chinese-ev-service">Работа с электроникой и блоками управления</div>
-          <div class="chinese-ev-service">Обновление и восстановление ПО</div>
-          <div class="chinese-ev-service">Русификация и настройка мультимедиа</div>
-          <div class="chinese-ev-service">Плановое ТО и сезонная подготовка</div>
-        </div>
-
-        <div class="section-footer">
-          <a href="#contacts" class="btn btn-outline">Записаться на диагностику</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Why us -->
-    <section id="about" class="section" aria-labelledby="about-title">
-      <div class="container">
-        <header class="section-header">
-          <h2 id="about-title">Наши преимущества</h2>
-          <p>Фокус исключительно на Tesla даёт нам экспертизу для решения задач любой сложности</p>
-        </header>
-
-        <div class="features-grid">
-          <article class="feature-card">
-            <div class="feature-icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <h3>Узкая специализация</h3>
-            <p>Работаем только с электромобилями Tesla и досконально знаем архитектуру каждой модели и поколения.</p>
-          </article>
-
-          <article class="feature-card">
-            <div class="feature-icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <h3>Накопленный опыт</h3>
-            <p>Более семи лет практики и свыше пятисот автомобилей, прошедших через наш технический центр.</p>
-          </article>
-
-          <article class="feature-card">
-            <div class="feature-icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <h3>Гарантийные обязательства</h3>
-            <p>Официальная гарантия на выполненные работы и установленные комплектующие сроком от 6 до 12 месяцев.</p>
-          </article>
-
-          <article class="feature-card">
-            <div class="feature-icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-            </div>
-            <h3>Быстрые сроки</h3>
-            <p>Экспресс-диагностика и оперативный ремонт — большинство задач закрываем в день вашего визита.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- B2B -->
-    <section id="business" class="b2b-section" aria-labelledby="b2b-title">
-      <div class="container">
-        <div class="b2b-card">
-          <div class="b2b-content">
-            <span class="b2b-badge">Для компаний и организаций</span>
-            <h2 id="b2b-title">Обслуживание юридических лиц</h2>
-            <p>Сопровождаем корпоративные автопарки Tesla: от разовой диагностики до регулярного ТО. Работаем по договору, предоставляем полный пакет документов для бухгалтерии и учёта.</p>
-            <a href="#contacts" class="btn btn-outline">Обсудить сотрудничество</a>
-          </div>
-
-          <div class="b2b-benefits">
-            <article class="b2b-benefit">
-              <div class="b2b-benefit-icon" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="2" y="5" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 10h20" stroke="currentColor" stroke-width="2"/></svg>
-              </div>
-              <div>
-                <h3>Безналичный расчёт</h3>
-                <p>Оплата по счёту для юридических лиц. Выставляем счёт, акт выполненных работ и другие закрывающие документы.</p>
-              </div>
-            </article>
-
-            <article class="b2b-benefit">
-              <div class="b2b-benefit-icon" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" stroke="currentColor" stroke-width="2"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-              </div>
-              <div>
-                <h3>Договор на обслуживание</h3>
-                <p>Заключаем долгосрочный договор с фиксированными условиями — удобно для компаний с несколькими автомобилями.</p>
-              </div>
-            </article>
-
-            <article class="b2b-benefit">
-              <div class="b2b-benefit-icon" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-              </div>
-              <div>
-                <h3>Персональный менеджер</h3>
-                <p>Один контакт для всех вопросов: запись, согласование работ, отчётность по каждому автомобилю в парке.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Reviews -->
-    <section id="reviews" class="section" aria-labelledby="reviews-title">
-      <div class="container">
-        <header class="section-header">
-          <h2 id="reviews-title">Мнения клиентов</h2>
-          <p>Реальные отзывы владельцев Tesla, которые доверили нам свой автомобиль</p>
-        </header>
-
         <div class="reviews-grid">
           <article class="review-card">
-            <div class="stars" aria-label="5 из 5 звёзд">★★★★★</div>
-            <blockquote class="review-text">«Приехал с просевшей батареей на Model S 2017 года. Специалисты провели полную диагностику, заменили два проблемных модуля и выровняли ёмкость. Машина снова держит заявленный пробег — очень доволен результатом.»</blockquote>
-            <footer class="review-author">
-              <div class="review-avatar" aria-hidden="true">И</div>
-              <div>
-                <div class="review-name">Игорь М.</div>
-                <div class="review-car">Tesla Model S, 2017</div>
-              </div>
-            </footer>
+            <div class="stars" aria-label="5 из 5">★★★★★</div>
+            <blockquote class="review-text">«Приехал с просевшей батареей на Model S. Заменили модули, выровняли ёмкость — машина снова держит пробег.»</blockquote>
+            <footer class="review-author"><div class="review-avatar">И</div><div><div class="review-name">Игорь М.</div><div class="review-car">Tesla Model S, 2017</div></div></footer>
           </article>
-
           <article class="review-card">
-            <div class="stars" aria-label="5 из 5 звёзд">★★★★★</div>
-            <blockquote class="review-text">«На Model 3 активировали полный пакет автопилота и настроили навигацию. Всё заработало с первого раза, без лишних вопросов. Ребята знают своё дело — рекомендую всем, кто ищет надёжный сервис.»</blockquote>
-            <footer class="review-author">
-              <div class="review-avatar" aria-hidden="true">С</div>
-              <div>
-                <div class="review-name">Сергей П.</div>
-                <div class="review-car">Tesla Model 3, 2022</div>
-              </div>
-            </footer>
+            <div class="stars" aria-label="5 из 5">★★★★★</div>
+            <blockquote class="review-text">«Активировали автопилот на Model 3 — всё с первого раза. Рекомендую.»</blockquote>
+            <footer class="review-author"><div class="review-avatar">С</div><div><div class="review-name">Сергей П.</div><div class="review-car">Tesla Model 3, 2022</div></div></footer>
           </article>
-
           <article class="review-card">
-            <div class="stars" aria-label="5 из 5 звёзд">★★★★★</div>
-            <blockquote class="review-text">«Model X постоянно гудел на скорости — оказались изношенные подшипники. Заменили за один рабочий день, шум полностью пропал. Цена адекватная, без навязанных работ. Буду обращаться снова.»</blockquote>
-            <footer class="review-author">
-              <div class="review-avatar" aria-hidden="true">Е</div>
-              <div>
-                <div class="review-name">Елена Р.</div>
-                <div class="review-car">Tesla Model X, 2020</div>
-              </div>
-            </footer>
+            <div class="stars" aria-label="5 из 5">★★★★★</div>
+            <blockquote class="review-text">«Model X гудел на скорости — заменили подшипники за день. Цена адекватная.»</blockquote>
+            <footer class="review-author"><div class="review-avatar">Е</div><div><div class="review-name">Елена Р.</div><div class="review-car">Tesla Model X, 2020</div></div></footer>
           </article>
         </div>
-
-        <div class="section-footer">
-          <a href="#reviews" class="btn btn-ghost">Все отзывы →</a>
-        </div>
+        <div class="section-footer"><a href="reviews.html" class="btn btn-ghost">Все отзывы →</a></div>
       </div>
     </section>
 
-    <!-- SEO content -->
-    <section class="section seo-content" aria-labelledby="seo-title">
+    <section class="section">
       <div class="container">
-        <h2 id="seo-title">ВольтЛаб: профессиональный сервис Tesla в Минске</h2>
-        <p>Владельцы электромобилей Tesla понимают: обычный автосервис не справится с высоковольтными системами, сложной электроникой и программным обеспечением. ВольтЛаб — это технический центр, где более восьми лет занимаются исключительно ремонтом и обслуживанием Tesla. Наши инженеры владеют архитектурой силовых установок, алгоритмами систем безопасности и особенностями каждого поколения батарейных модулей.</p>
-
-        <h3>Почему ВольтЛаб — это настоящий Tesla-сервис в Минске?</h3>
-        <p>Не каждая мастерская готова работать с электромобилями. Мы специализируемся на Tesla с первого дня и понимаем, что качественное обслуживание — это не просто подключение сканера, а глубокое погружение в электронику, прошивки и механику EV. Используем профессиональное диагностическое оборудование и строго соблюдаем протоколы безопасности при работе с высоким напряжением.</p>
-
-        <h3>Обслуживание Tesla без скрытых расходов</h3>
-        <p>Наш подход к сервису Tesla строится на трёх принципах:</p>
-        <ul>
-          <li>Открытая диагностика с разъяснением каждого кода ошибки</li>
-          <li>Оригинальные запчасти или проверенные аналоги — только по согласованию с клиентом</li>
-          <li>Гарантия на все виды работ — от 6 до 12 месяцев</li>
-        </ul>
-        <p>Мы знаем типичные слабые места разных моделей и умеем устранять неисправности быстро и безопасно. При этом сервис Tesla не обязан быть дорогим — мы работаем напрямую с поставщиками комплектующих, что позволяет держать честные цены.</p>
-
-        <h3>Пригон авто из США под ключ</h3>
-        <p>ВольтЛаб организует подбор, доставку и восстановление автомобилей из Америки — Tesla, электромобили и другие марки. Более 200 авто привезено под ключ, услуга от 1500 BYN с минимальными ценами на доставку. Подробнее — на странице <a href="import.html">пригона авто из США</a>.</p>
-
-        <h3>Обслуживание китайских электромобилей</h3>
-        <p>ВольтЛаб обслуживает не только Tesla, но и китайские электромобили: BYD, Zeekr, Li Auto, NIO, Voyah, XPeng и другие. Выполняем диагностику, ремонт батарей, работу с электроникой, обновление ПО и русификацию мультимедиа.</p>
-
-        <h3>Обслуживание юридических лиц</h3>
-        <p>ВольтЛаб работает с компаниями, у которых в эксплуатации один или несколько Tesla. Принимаем оплату безналичным расчётом, оформляем счета и акты, заключаем договоры на регулярное обслуживание корпоративного автопарка.</p>
-
-        <h3>Ремонт Tesla в Минске: доверяйте профессионалам</h3>
-        <p>При ремонте Tesla важна каждая деталь: момент затяжки, чистота разъёмов, совместимость версии прошивки после замены блока. В ВольтЛаб мы отслеживаем технические бюллетени производителя и регулярно повышаем квалификацию команды. Если вам нужно плановое ТО без долгого ожидания — свяжитесь с нами, подберём удобное время.</p>
-
-        <h3>Tesla-сервис в Минске — экспертиза, которой можно доверять</h3>
-        <p>ВольтЛаб сочетает многолетний опыт, прозрачность и техническую оснащённость. Мы не берёмся за работы, в которых не уверены, но если взялись — выполняем на высшем уровне. Чтобы записаться на ремонт Tesla, оставьте заявку на сайте или позвоните — проконсультируем по телефону, назовём ориентировочную стоимость и сроки.</p>
-      </div>
-    </section>
-
-    <!-- Contacts -->
-    <section id="contacts" class="section" aria-labelledby="contacts-title">
-      <div class="container">
-        <header class="section-header">
-          <h2 id="contacts-title">Как нас найти</h2>
-          <p>Приезжайте в наш центр или свяжитесь удобным для вас способом</p>
-        </header>
-
-        <div class="contacts-grid">
-          <div class="contact-item">
-            <h3>Адрес</h3>
-            <p>Минск, Беларусь</p>
+        <div class="import-cta">
+          <h2>Нужна помощь с Tesla?</h2>
+          <p>Запишитесь на диагностику или консультацию — поможем с любым вопросом</p>
+          <div class="import-cta-actions">
+            <a href="contacts.html" class="btn btn-outline">Контакты</a>
+            <a href="about.html" class="btn btn-ghost">О компании</a>
           </div>
-          <div class="contact-item">
-            <h3>Телефоны</h3>
-            <a href="tel:+375336883359">+375 33 688 3359</a>
-          </div>
-          <div class="contact-item">
-            <h3>График работы</h3>
-            <p>Пн–Сб: 10:00 – 19:00</p>
-          </div>
-        </div>
-
-        <div class="social-buttons">
-          <a href="https://t.me/" class="social-btn social-btn--tg" target="_blank" rel="noopener noreferrer">Telegram</a>
-          <a href="https://wa.me/" class="social-btn social-btn--wa" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-          <a href="viber://chat" class="social-btn social-btn--vb" target="_blank" rel="noopener noreferrer">Viber</a>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Футер: также в partials/footer.html для других страниц -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="./" class="logo">Вольт<span>Лаб</span></a>
+          <a href="index.html" class="logo">Вольт<span>Лаб</span></a>
           <p>Специализированный технический центр для владельцев Tesla в Беларуси. Диагностика, ремонт и программное обслуживание всех моделей электромобилей.</p>
           <div class="footer-socials">
             <a href="https://t.me/" class="social-btn social-btn--tg" target="_blank" rel="noopener noreferrer">TG</a>
@@ -588,27 +211,24 @@
         <div class="footer-col">
           <h4>Услуги</h4>
           <a href="import.html">Пригон авто из США</a>
-          <a href="#services">Диагностика двигателя</a>
-          <a href="#services">Ремонт силовой установки</a>
-          <a href="#services">Реставрация АКБ</a>
-          <a href="#services">Настройка автопилота</a>
-          <a href="#services">Обновление ПО</a>
-          <a href="#services" class="all-link">Все услуги →</a>
+          <a href="services.html">Диагностика двигателя</a>
+          <a href="services.html">Реставрация АКБ</a>
+          <a href="services.html" class="all-link">Все услуги →</a>
         </div>
         <div class="footer-col">
           <h4>Модели</h4>
-          <a href="#models">Tesla Model S</a>
-          <a href="#models">Tesla Model 3</a>
-          <a href="#models">Tesla Model X</a>
-          <a href="#models">Tesla Model Y</a>
-          <a href="#models">Tesla Cybertruck</a>
+          <a href="models.html">Tesla Model S</a>
+          <a href="models.html">Tesla Model 3</a>
+          <a href="models.html">Tesla Model X</a>
+          <a href="models.html">Tesla Model Y</a>
+          <a href="models.html">Tesla Cybertruck</a>
         </div>
         <div class="footer-col">
           <h4>Контакты</h4>
           <a href="tel:+375336883359">+375 33 688 3359</a>
-          <a href="#contacts">Минск</a>
-          <a href="#about">О нас</a>
-          <a href="#reviews">Отзывы</a>
+          <a href="contacts.html">Минск</a>
+          <a href="about.html">О нас</a>
+          <a href="reviews.html">Отзывы</a>
         </div>
       </div>
       <div class="footer-bottom">
@@ -617,7 +237,6 @@
       </div>
     </div>
   </footer>
-
   <script src="js/main.js" defer></script>
 </body>
 </html>
