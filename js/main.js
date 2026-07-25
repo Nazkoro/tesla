@@ -1,15 +1,11 @@
 function initTheme() {
-  const stored = localStorage.getItem('theme');
-  const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
-  const theme = stored ?? (prefersLight ? 'light' : 'dark');
-  document.documentElement.dataset.theme = theme;
+  document.documentElement.dataset.theme = 'dark';
 }
 
 function toggleTheme() {
   const current = document.documentElement.dataset.theme;
   const next = current === 'light' ? 'dark' : 'light';
   document.documentElement.dataset.theme = next;
-  localStorage.setItem('theme', next);
 }
 
 function initMobileNav() {
