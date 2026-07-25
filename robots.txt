@@ -1,4 +1,4 @@
 ﻿User-agent: *
 Allow: /
 
-Sitemap: https://voltlab.by/sitemap.xml
+Sitemap: https://service-tesla.by/sitemap.xml
